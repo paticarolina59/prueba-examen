@@ -227,7 +227,7 @@ body
 
     .navegador__sublistaDiseno, .navegador__sublistaFoto
     {
-        width: 18rem;
+        width: 100%;
         top: 40%;
     }
 }
@@ -236,7 +236,7 @@ body
 
     .navegador__sublistaFoto
     {
-        width: 18rem;
+        width: 100%;
         top: 70%;
     }
 }
@@ -362,9 +362,17 @@ body
     text-align: center;
 
     margin: 1rem 0 3rem 0;
+    width: 80%;
 }
 
 .contenedor__total
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorImg__texto
 {
     display: flex;
     flex-direction: column;
@@ -375,7 +383,6 @@ body
 .contenedor__imgFadeIn 
 {
     position: relative;
-    
 }
 
 .contenedor__imagen {
@@ -412,13 +419,9 @@ body
 .contenedor__Imgs1
 {
     display: grid;
-    grid-template-columns: repeat(auto-fill 3,1fr);
-    grid-auto-rows: minmax(15rem, auto);
     grid-auto-flow: dense;
     object-fit: cover;
-    /* https://es.stackoverflow.com/questions/456743/imagen-css-no-se-redimensionan-en-grid */
 
-    
     gap: 1rem;
     width: 70%;
     margin: 0 0 1rem 0;
@@ -454,11 +457,8 @@ body
 .contenedor__Imgs2
 {
     display: grid;
-    grid-template-columns: repeat(auto-fill 3,1fr);
-    grid-auto-rows: minmax(15rem, auto);
     grid-auto-flow: dense;
     object-fit: cover;
-    /* https://es.stackoverflow.com/questions/456743/imagen-css-no-se-redimensionan-en-grid */
     
     gap: 1rem;
     width: 70%;

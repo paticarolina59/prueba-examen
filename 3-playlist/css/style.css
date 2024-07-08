@@ -227,7 +227,7 @@ body
 
     .navegador__sublistaDiseno, .navegador__sublistaFoto
     {
-        width: 18rem;
+        width: 100%rem;
         top: 40%;
     }
 }
@@ -236,7 +236,7 @@ body
 
     .navegador__sublistaFoto
     {
-        width: 18rem;
+        width: 100%rem;
         top: 70%;
     }
 }
