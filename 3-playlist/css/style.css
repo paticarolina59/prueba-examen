@@ -32,7 +32,7 @@
     --colorNegro: #191919;
     --colorGris:#878787;
     --colorBlanco:#F5F5F5;
-    --colorMorado:#6967CE;
+    --colorMorado:#6260f1;
 }
 
 *
@@ -166,6 +166,13 @@ body
         width: 30%;
         padding: 2rem 0;
     }
+
+    .boton__responsive
+    {
+
+        font-size: 2rem;
+        color: var(--colorGris);
+    }
 }
 
 /* Navegador principal */
@@ -173,7 +180,7 @@ body
 .navegador__elementoLista
 {
     list-style-type: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -293,7 +300,7 @@ body
 
 .botonIcon
 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: var(--colorGris);
 }
 
@@ -306,7 +313,7 @@ body
 
     .botonIcon
     {
-        font-size: 1.7rem;
+        font-size: 2rem;
         margin: 0 1rem 0 0 ;
     }
 }
@@ -380,7 +387,7 @@ body
 .footer
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
     gap: 2rem;
@@ -388,10 +395,17 @@ body
     margin: 0 0 3rem 0;
 }
 
+.contenedor__footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 1030px) 
 {
 
-    .footer
+    .contenedor__footer
     {
         flex-direction: column;
     }
@@ -533,19 +547,23 @@ body
     padding: 0.5rem 7rem 0.5rem 0.5rem;
 
     font-family: var(--tipografiaTexto);
+    font-size: 1rem;
     border: 1px solid var(--colorNegro);
+    border-radius: 0.5rem;
 }
 
 .footer__formInputBoton
 {
     background-color: var(--colorNegro);
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-decoration: none;
     font-family: var(--tipografiaTexto);
     color: var(--colorBlanco);
     border: transparent;
+    border-radius: 0.5rem;
 
-    padding: 0.6rem;
+    padding: 0.5rem 1rem ;
+    margin: 0 0 0 0.5rem;
 }
 
 .footerRRSS
@@ -566,7 +584,7 @@ body
 .footerDerechos__texto
 {
     font-family: var(--tipografiaTexto);
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: end;
 
     margin: 1rem 0 0 0;
