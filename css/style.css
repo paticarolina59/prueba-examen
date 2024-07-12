@@ -32,7 +32,7 @@
     --colorNegro: #191919;
     --colorGris:#878787;
     --colorBlanco:#F5F5F5;
-    --colorMorado:#6967CE;
+    --colorMorado:#6260f1;
 }
 
 *
@@ -136,6 +136,11 @@ body
     margin: 1.5rem 0;
 }
 
+.menu__barra
+{
+    font-size: 2rem;
+}
+
 @media screen and (max-width: 992px){
 
     .navegador__lista
@@ -162,18 +167,23 @@ body
         top: 70%;
 
         background-color: white;
+        font-size: 2rem;
         
         width: 30%;
         padding: 2rem 0;
     }
-}
 
+    .boton__responsive
+    {
+        font-size: 2rem;
+    }
+}
 /* Navegador principal */
 
 .navegador__elementoLista
 {
     list-style-type: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -293,7 +303,7 @@ body
 
 .botonIcon
 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: var(--colorGris);
 }
 
@@ -306,7 +316,7 @@ body
 
     .botonIcon
     {
-        font-size: 1.7rem;
+        font-size: 2rem;
         margin: 0 1rem 0 0 ;
     }
 }
@@ -347,7 +357,7 @@ body
 
     position: relative;
 
-    width: fit-content;
+    width:100%;
 }
 
 .img__slide
@@ -527,7 +537,7 @@ span
     width: 80%;
     margin: 1rem 0 0 0;
 
-    font-size: 1.9rem;
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -578,6 +588,7 @@ span
     margin: 0 0 2rem 0;
 
     color: var(--colorNegro);
+    font-size: 1rem;
 }
 
 .yoSoy__caracteristicas
@@ -633,7 +644,7 @@ span
 i
 {
     color: var(--colorGris);
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .conocimientos__boton {
@@ -756,7 +767,7 @@ i
 .conocimiento__texto
 {
     font-family: var(--tipografiaTexto);
-    font-size: 0.6rem;
+    font-size: 1rem;
     color: var(--colorNegro);
 }
 
@@ -895,7 +906,7 @@ i
     text-decoration: none;
     color: var(--colorBlanco);
     font-family: var(--tipografiaSubTitulo);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 
     cursor: pointer;
     z-index: 1;
@@ -1113,20 +1124,28 @@ i
 .form__label
 {
     font-family: var(--tipografiaSubTitulo);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--colorMorado);
 }
 
 .form__input
 {
     margin: 0 0 1rem 0;
+    padding: 0 0 0 1rem;
     width: 80%;
-    height: 1.8rem;
+    height: 2.5rem;
 
     border: 1px solid var(--colorGris);
     border-radius: 0.5rem;
-    padding: 0 0 0 1rem;
+    font-size: 1.5rem;
+    
 }
+
+#phone
+{
+    color: var(--colorGris);
+}
+
 
 .form__textarea
 {
@@ -1135,6 +1154,7 @@ i
     border-radius: 0.5rem;
     color: var(--colorFondo);
     font-family: var(--tipografiaTexto);
+    font-size: 1.5rem;
 
     width: 80%;
     padding:0.5rem ;
@@ -1145,7 +1165,7 @@ i
 .modal__botonEnviar
 {
     background-color: var(--colorNegro);
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     font-family: var(--tipografiaTexto);
     color: var(--colorBlanco);
     border: transparent;
@@ -1212,7 +1232,7 @@ i
 .agradecimiento__parrafo
 {
     font-family: var(--tipografiaTexto);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -1262,7 +1282,7 @@ i
 .footer
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
     gap: 2rem;
@@ -1270,10 +1290,17 @@ i
     margin: 0 0 3rem 0;
 }
 
+.contenedor__footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 1030px) 
 {
 
-    .footer
+    .contenedor__footer
     {
         flex-direction: column;
     }
@@ -1415,19 +1442,23 @@ i
     padding: 0.5rem 7rem 0.5rem 0.5rem;
 
     font-family: var(--tipografiaTexto);
+    font-size: 1rem;
     border: 1px solid var(--colorNegro);
+    border-radius: 0.5rem;
 }
 
 .footer__formInputBoton
 {
     background-color: var(--colorNegro);
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-decoration: none;
     font-family: var(--tipografiaTexto);
     color: var(--colorBlanco);
     border: transparent;
+    border-radius: 0.5rem;
 
-    padding: 0.6rem;
+    padding: 0.5rem 1rem ;
+    margin: 0 0 0 0.5rem;
 }
 
 .footerRRSS
@@ -1448,7 +1479,7 @@ i
 .footerDerechos__texto
 {
     font-family: var(--tipografiaTexto);
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: end;
 
     margin: 1rem 0 0 0;

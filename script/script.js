@@ -95,13 +95,13 @@ function muestraMenu ()
     {
         let boton = document.getElementById('barra__menu');
 
-        boton.innerHTML = '<i class="fa-solid fa-x"></i>';
+        boton.innerHTML = '<i class="fa-solid fa-x boton__responsive"></i>';
     }
 
     else 
     {
         let boton = document.getElementById('barra__menu');
-        boton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        boton.innerHTML = '<i class="fa-solid fa-bars boton__responsive"></i>';
     }
 }
 
