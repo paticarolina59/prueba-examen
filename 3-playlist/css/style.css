@@ -84,6 +84,7 @@ body
     .contenedor__barraNavegador
     {
         height: 6rem;
+        width: 100%;
     }
 }
 
@@ -136,6 +137,11 @@ body
     margin: 1.5rem 0;
 }
 
+.menu__barra
+{
+    font-size: 2rem;
+}
+
 @media screen and (max-width: 992px){
 
     .navegador__lista
@@ -159,22 +165,20 @@ body
 
         z-index: 1;
         position: absolute;
-        top: 70%;
+        top: 80%;
 
-        background-color: white;
+        background-color: var(--colorBlanco);
+        font-size: 2rem;
         
         width: 30%;
-        padding: 2rem 0;
+        padding: 2rem;
     }
 
     .boton__responsive
     {
-
         font-size: 2rem;
-        color: var(--colorGris);
     }
 }
-
 /* Navegador principal */
 
 .navegador__elementoLista
@@ -234,8 +238,9 @@ body
 
     .navegador__sublistaDiseno, .navegador__sublistaFoto
     {
-        width: 100%rem;
+        width: 100%;
         top: 40%;
+        left: 0%;
     }
 }
 
@@ -243,7 +248,7 @@ body
 
     .navegador__sublistaFoto
     {
-        width: 100%rem;
+        width: 100%;
         top: 70%;
     }
 }
@@ -309,15 +314,6 @@ body
     color: var(--colorNegro);
 }
 
-@media screen and (max-width: 992px) {
-
-    .botonIcon
-    {
-        font-size: 2rem;
-        margin: 0 1rem 0 0 ;
-    }
-}
-
 /* Buscador del icono de la lupa */
 
 .botones_form
@@ -349,6 +345,33 @@ body
 /* * MAIN */
 /* Seccion playlist */
 
+@keyframes aparece
+{
+    from 
+    {
+        opacity: 0;
+        transform: scale(0.4);;
+    }
+
+    to 
+    {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+section
+{
+    view-timeline-name: --section;
+    view-timeline-axis: block;
+    animation-timeline: --section;
+    animation-name: aparece;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+
+    /* FUENTE: https://www.youtube.com/watch?v=AbCYziNyjvk&ab_channel=midudev */
+}
+
 .contenedor__playlist
 {
     display: flex;
@@ -367,12 +390,29 @@ body
     margin: 5rem 0 5rem 0;
 }
 
+@media screen and (max-width: 600px) {
+
+    .playlist__titulo
+    {
+        width: 80%;
+    }
+}
+
 .playlist__reproductor
 {
     width: 70%;
     height: 10rem;
     margin: 0 0 5rem 0;
 }
+
+@media screen and (max-width: 600px) {
+
+    .playlist__reproductor
+    {
+        width: 90%;
+    }
+}
+
 
 
 
@@ -468,10 +508,11 @@ body
     justify-content: space-evenly;
 
     width: 45%;
+
+    font-size: 1rem;
 }
 
-@media screen and (max-width: 1030px) 
-{
+@media screen and (max-width: 1030px) {
 
     .footer__navegador
     {
@@ -482,9 +523,18 @@ body
     }
 }
 
+@media screen and (max-width: 750px) {
+
+    .footerNavegador__categorias
+    {
+    width: 30%;
+    }
+}
+
 .footer__lista
 {
     font-family: var(--tipografiaSubTitulo);
+    color: var(--colorMorado);
 
     list-style-type: none;
 }
@@ -498,12 +548,12 @@ body
 {
     text-decoration: none;
     font-family: var(--tipografiaTexto);
-    color: var(--colorGris);
+    color: var(--colorNegro);
 }
 
 .footer__link:hover 
 {
-    color: var(--colorNegro);
+    color: var(--colorMorado);
 }
 
 /* Suscribete */
@@ -540,6 +590,19 @@ body
     margin: 0 0 1rem 0;
 
     font-family: var(--tipografiaTexto);
+}
+
+@media screen and (max-width: 750px) 
+{
+
+    .footer__form
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 1rem;
+    }
 }
 
 .footer__formInput
@@ -589,4 +652,3 @@ body
 
     margin: 1rem 0 0 0;
 }
-

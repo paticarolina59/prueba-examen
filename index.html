@@ -6,9 +6,13 @@
     <meta name="author" content="mimeomia">
     <meta name="keywords" content="portafolio, diseno, web, fotografia, diseno grafico">
     <meta name="description" content="Pagina de inicio de mi protafolio profesinal">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+    <link rel="preload" href="./font/bitter-v33-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./font/fira-sans-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./font/oswald-v53-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <script src="./script/script.js" defer></script>
@@ -52,12 +56,11 @@
                         
                             <!-- Submenu desplegable 1 -->
                             <ol class="navegador__sublista navegador__sublistaDiseno" id="sublistaDiseno">
-                                <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/158570297/Musicono" target="_blank" title="Ir a branding">Branding</a></li>
-                                <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/45730889/ME-CACHAI" target="_blank" title="Ir a ux">UX</a></li>
+                                <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/158570297/Musicono" target="_blank" title="Ir a branding"> Branding </a></li>
+                                <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/45730889/ME-CACHAI" target="_blank" title="Ir a ux"> UX </a></li>
                                 <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/45724359/Proyecto-personal-que-busca-hacer-un-homenaje" target="_blank" title="Ir a video">Video</a></li>
                                 <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/45718919/KARTON" target="_blank" title="Ir a web">Web</a></li>
                             </ol> 
-                        </a>
                         </li>
 
                         <!-- Vuelvo al navegador principal -->
@@ -167,8 +170,8 @@
         <section class="yo__soy">
             <h2 class="titulo__main"> - SOY - </h2>
             <div class="contenedor__yoSoy">
-                <div class="yoSoy__img">
-                    <img src="./img/img_yoSoy.webp" alt="img-yoSoy" loading="lazy">
+                <div class="contenedoryoSoy__img">
+                    <img src="./img/img_yoSoy.webp" alt="img-yoSoy" loading="lazy" class="yoSoy__img">
                 </div>
 
                 <div class="yoSoy__texto">
@@ -356,7 +359,7 @@
                     <article class="contenedor__categorias">
                         <div class="contenedorCategorias__interior">
                             <i class="fa-regular fa-user categoria__icon"></i>
-                            <a href="https://www.behance.net/paticarolina?tracking_source=search_projects%7Csergas+" class="contenedorCategorias__titulo" target="_blank" title="Ir a ux designer and investigator">UX Designer and Investigator</a>  
+                            <a href="https://www.behance.net/paticarolina?tracking_source=search_projects%7Csergas+" class="contenedorCategorias__titulo" target="_blank" title="Ir a ux designer & investigator">UX Designer & Investigator</a>  
                         </div>
                     </article>
     
@@ -574,33 +577,33 @@
                 <form action="#" method="get" class="form" name="formulario__contacto">
 
                     <div class="form__contenedorInput">
-                        <label for="nombre" class="form__label">Nombre</label>
+                        <label for="form__nombre" class="form__label">Nombre</label>
                         <br>
-                        <input type="text" name="nombre" id="name" class="form__input" required>
+                        <input type="text" name="nombre" id="form__nombre" class="form__input" required>
                     </div>
             
                     <div class="form__contenedorInput">
-                        <label for="apellido" class="form__label">Apellido</label>
+                        <label for="form__apellido" class="form__label">Apellido</label>
                         <br>
-                        <input type="text" name="apellido" id="surname" class="form__input" required>
+                        <input type="text" name="apellido" id="form__apellido" class="form__input" required>
                     </div>
 
                     <div class="form__contenedorInput">
-                        <label for="numero" class="form__label">Movil</label>
+                        <label for="form__numero" class="form__label">Movil</label>
                         <br>
-                        <input type="text" name="numero" id="phone" class="form__input" value="(+34)" required>
+                        <input type="text" name="numero" id="form__numero" class="form__input" value="(+34)" required>
                     </div>
 
                     <div class="form__contenedorInput">
-                        <label for="email" class="form__label">Email</label>
+                        <label for="form__email" class="form__label">Email</label>
                         <br>
-                        <input type="email" name="email" id="mail" class="form__input" required>
+                        <input type="email" name="email" id="form__email" class="form__input" required>
                     </div>
             
                     <div class="form__contenedorInput">
-                        <label for="asunto" class="form__label">Asunto</label>
+                        <label for="form__asunto" class="form__label">Asunto</label>
                         <br>
-                        <select name="asunto" id="asuntoMail" class="form__input">
+                        <select name="asunto" id="form__asunto" class="form__input">
                             <option value="0">Duda</option>
                             <option value="0">Cotización</option>
                             <option value="0">Información</option>
@@ -608,9 +611,9 @@
                     </div>
             
                     <div class="form__contenedorInput">
-                        <label for="tema" class="form__label">Mensaje</label>
+                        <label for="form__mensaje" class="form__label">Mensaje</label>
                         <br>
-                        <textarea name="tema" class="form__textarea" id="tema" cols="93" rows="15" maxlength="200" placeholder="Escribe tu mensaje :D"></textarea>
+                        <textarea name="tema" class="form__textarea" id="form__mensaje" cols="93" rows="15" maxlength="200" placeholder="Escribe tu mensaje :D"></textarea>
                     </div>
                 </form>
 
@@ -648,12 +651,6 @@
         </section>
 
     </main>
-
-
-
-
-
-
 
 
 

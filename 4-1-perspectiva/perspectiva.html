@@ -6,9 +6,13 @@
     <meta name="author" content="mimeomia">
     <meta name="keywords" content="portafolio, diseno, web, fotografia, diseno grafico">
     <meta name="description" content="Pagina de inicio de mi protafolio profesinal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="./img/image-favicon.svg">
+    <link rel="preload" href="./font/bitter-v33-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./font/fira-sans-v17-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./font/oswald-v53-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <script src="./script/script.js" defer></script>
@@ -21,7 +25,7 @@
     <!-- Aqui comienza el header: 
         1. Contara con una barra superior con el navegador, de los topicos principales de la pagina que desplegarán un submenu que funciona por medio de click 
         para que sea funcional en version de escritorio y de movil. Ademas, botones que ayudaran a interactuar con la pagina: buscador y RRSS.-->
-        <header class="header">
+    <header class="header">
 
             <!-- Esta es la barra del navedador:
                 - menu desplegable en dos partes
@@ -30,7 +34,7 @@
                 
                 <!-- Contenedor del logo -->
             
-                <a href="../index.html" class="logo" title="Logo e ir al home"> MIMEOMIA </a>
+                <a href="#inicio" class="logo" title="logo del sitio y boton al home"> MIMEOMIA </a>
     
                 <!-- Contenedor del navegador principal -->
                 <div class="contenedor__navegador">
@@ -44,38 +48,37 @@
                         <ul class="navegador__lista" id="listaCompleta">
     
                             <!-- Navegador principal  -->
-                            <li class="navegador__elementoLista"><a class="navegador__link navegador__link" href="../index.html" target="_self" title="Ir al home">Inicio</a></li>
-                            <li class="navegador__elementoLista"><a class="navegador__link"  href="../index.html#sobreMi" title="Ir a sobre mi"> Sobre mi </a></li>
+                            <li class="navegador__elementoLista"><a class="navegador__link navegador__link--in" href="#inicio" target="_self" title="Ir al home">Inicio</a></li>
+                            <li class="navegador__elementoLista"><a class="navegador__link"  href="#sobreMi" title="Ir a sobre mi"> Sobre mi </a></li>
                             
                             <!-- Boton desplegable 1 -->
-                            <li class="navegador__elementoLista"><a class="navegador__link" id="botonDiseno" href="#" title="Ir a menu desplegable">Diseño
+                            <li class="navegador__elementoLista"><a class="navegador__link" id="botonDiseno" href="#" title="Despliga menu de diseño">Diseño
                             
                                 <!-- Submenu desplegable 1 -->
                                 <ol class="navegador__sublista navegador__sublistaDiseno" id="sublistaDiseno">
-                                    <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/158570297/Musicono" target="_blank" title="Ir a branding">Branding</a></li>
-                                    <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/45730889/ME-CACHAI" target="_blank" title="Ir a ux">UX</a></li>
+                                    <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/158570297/Musicono" target="_blank" title="Ir a branding"> Branding </a></li>
+                                    <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/45730889/ME-CACHAI" target="_blank" title="Ir a ux"> UX </a></li>
                                     <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/45724359/Proyecto-personal-que-busca-hacer-un-homenaje" target="_blank" title="Ir a video">Video</a></li>
                                     <li class="navegador__elementoDiseno"><a class="sublista__link" href="https://www.behance.net/gallery/45718919/KARTON" target="_blank" title="Ir a web">Web</a></li>
                                 </ol> 
-                            </a>
                             </li>
     
                             <!-- Vuelvo al navegador principal -->
-                            <li class="navegador__elementoLista"><a class="navegador__link" href="../3-playlist/pagPlaylist.html" title="Ir a playlist">Playlist</a></li>
+                            <li class="navegador__elementoLista"><a class="navegador__link" href="./3-playlist/pagPlaylist.html" title="Ir a la playlist">Playlist</a></li>
                             
                             <!-- Boton desplegable 2 -->
-                            <li class="navegador__elementoLista"><a class="navegador__link navegador__link--in" id="botonFoto" href="#" title="Ir a desplegable">Foto
+                            <li class="navegador__elementoLista"><a class="navegador__link" id="botonFoto" href="#" title="Ir a foto">Foto
                                 
                                 <!-- Submenu desplegable 2 -->
                                 <ol class="navegador__sublista navegador__sublistaFoto" id="sublistaFoto">
-                                    <li class="navegador__elementoFoto"><a class="sublista__link" href="../4-1-perspectiva/perspectiva.html" title="Ir a perspectiva">Perspectiva</a></li>
-                                    <li class="navegador__elementoFoto"><a class="sublista__link" href="../4-2-collage/collage.html" title="Ir a collage">Collage</a></li>
+                                    <li class="navegador__elementoFoto"><a class="sublista__link" href="./4-1-perspectiva/perspectiva.html" title="Ir a perspectiva">Perspectiva</a></li>
+                                    <li class="navegador__elementoFoto"><a class="sublista__link" href="./4-1-perspectiva/perspectiva.html" title="Ir a collage">Collage</a></li>
                                 </ol> 
                             </a>
                             </li>
     
                             <!-- Vuelvo al navegador principal -->
-                            <li class="navegador__elementoLista"><a class="navegador__link" href="../index.html#contactame">Contacto</a></li>
+                            <li class="navegador__elementoLista"><a class="navegador__link" href="#contactame" title="Ir a contacto">Contacto</a></li>
                         </ul>
                     </nav>
                     
@@ -87,7 +90,7 @@
                     <ul class="botones__lista">
     
                         <li class="botones__elementoLista">
-                            <a class="botones__link" href="#" id="boton__lupa" title="activar lupa">
+                            <a class="botones__link" href="#" id="boton__lupa" title="boton lupa">
                                 <i class="fa-solid fa-magnifying-glass botonIcon" ></i>
                             </a>
                         </li>
@@ -117,7 +120,7 @@
     
                 </div>
             </div>
-        </header>
+    </header>
 
     <main class="main">
 
@@ -209,11 +212,11 @@
      - info general
      - Navegador del footer
      - Submit y redes sociales  -->
-     <footer class="footer">
+    <footer class="footer">
 
         <div class="contenedor__footer">
             <div class="footer__tienda">
-                <a href="../index.html" class="logo" title="Ir al home"> MIMEOMIA </a>
+                <a href="#inicio" class="logo" title="Ir al home"> MIMEOMIA </a>
     
                 <div class="footerTienda__texto">
                     <p class="footerTienda__parrafo footerTienda__parrafo--tienda">
@@ -237,17 +240,17 @@
     
                 <div class="footerNavegador__categorias">
                     <ul class="footer__lista"> Foto
-                        <li class="footer__elementoLista"><a href="../4-1-perspectiva/perspectiva.html" class="footer__link" title="Ir a perspectiva"> Perspectiva </a></li>
-                        <li class="footer__elementoLista"><a href="../4-2-collage/collage.html" class="footer__link" title="Ir a collage"> Collage </a></li>
+                        <li class="footer__elementoLista"><a href="./4-1-perspectiva/perspectiva.html" class="footer__link" title="Ir a perspectiva"> Perspectiva </a></li>
+                        <li class="footer__elementoLista"><a href="./4-2-collage/collage.html" class="footer__link" title="Ir a collage"> Collage </a></li>
                     </ul>
                 </div>
     
                 <div class="footerNavegador__categorias">
                     <ul class="footer__lista"> Ayuda
                         <li class="footer__elementoLista"><a href="https://www.linkedin.com/in/patricia-riveram/" class="footer__link" title="preguntas frecuentes" Preguntas Frecuentes </a></li>
-                        <li class="footer__elementoLista"><a href="../index.html#contactame" class="footer__link" title="Ir a contacto"> Contacto </a></li>
+                        <li class="footer__elementoLista"><a href="#contactame" class="footer__link" title="Ir a contacto"> Contacto </a></li>
                         <li class="footer__elementoLista"><a href="https://www.linkedin.com/in/patricia-riveram/" class="footer__link" title="Ir a punto de entrega"> Punto de entrega </a></li>
-                        <li class="footer__elementoLista"><a href="../index.html#sobreMi" class="footer__link" title="Ir a sobre mi"> Sobre Mi </a></li>
+                        <li class="footer__elementoLista"><a href="#sobreMi" class="footer__link" title="Ir a sobre mi"> Sobre Mi </a></li>
                     </ul>
                 </div>
     
